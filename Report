@@ -1,0 +1,32 @@
+II2018010 Abhinav Batta
+Dr. Rahul Kala
+4th Oct 2020
+
+How to Run?
+You need python3 with pygame module installed on it. (You can install it using pip).
+Just Run main.py and Enjoy the Game.
+
+Rules of Game:
+Rules of Game can be better understood from Internet but here are short Rules:
+You need to capture your Opponent Pieces.
+To capture the opponent Peice you need to move over it diagonally.
+You can move diagonally each time but for capture the opposite diagonal square must be empty.
+You can make 1,2 or 3 ... Captures in a move.
+When a player's all pieces are captured or the player cannot make a move he loses.
+
+What have I done?
+First I implemented a 2 player version of game:
+You click on your piece. It shows you all possible moves. And you make a move.
+Second I implemented "game.py" module so that a "player" and be substituted with AI. A kind of Abstraction you can think of.
+Finally I implemented minimax Algorithm to play the game from AI side. Further I assume it can be optimized with alpha-beta pruning.
+
+For Description of code refer to Diagram
+
+Further Work: I think of Optimizing it by using Alpha-beta Pruning. 
+
+Speed Test: With depth of calculation at 3 the moves performed by AI are almost instantaneous.
+At depth 4 they take a few second, but at Depth of 5 it takes way much longer.
+I implemented alpha-beta pruning at the end but in my experience the simple minimax algorithm performed better. 
+With the implementation of alpha beta pruning the moves were expectedly faster at depth 5.
+
+
